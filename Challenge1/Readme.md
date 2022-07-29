@@ -1,0 +1,5 @@
+1. The three tier web application I will be deploying to Kubernetes is called **SnapPass. It is a Python Flask application that uses redis as the storage backend to provide a simple, secure, and ephemeral way to share passwords**.Deploying redis as Backend, snapp application logic And deploying nginx as front end we can access the application using loadbalancer service ip.
+2. Here in order to deploy 3-tier Application we will deploy first Azure Kubernetes Cluster using terraform the terraform configuration files for cluster creation are in **k8-cluster-creation** directory.Create aks cluster using configuration files.Post cluster creation successfull.
+3. Here we have 2 ways to deploy 3-tier application on kubernetes cluster.
+      **i.** using Kubernetes manifest which are in **K8-Manifests** Directory  
+      **ii.** We can use terraform files which inturn deploy the the k8 deployments into k8 cluster using the generated kube config. The configuration files location in **3-tier-application-deployment-using-terraform** directory.
